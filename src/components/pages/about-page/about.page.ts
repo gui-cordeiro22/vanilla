@@ -48,7 +48,8 @@ export const AboutPage = () => {
 
   const incrementBtn = Button(
     "Clique para incrementar...",
-    handleUpdateCounter
+    handleUpdateCounter,
+    "cta-button"
   );
   card.appendChild(incrementBtn);
 

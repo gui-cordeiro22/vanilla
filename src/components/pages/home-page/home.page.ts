@@ -3,6 +3,7 @@ import { Logo } from "../../element/logo";
 import { Button } from "../../element/button/button";
 
 // Styles
+import "./home.styles.css";
 import "../../element/logo/logo.styles.css";
 import "../../element/button/button.styles.css";
 
@@ -12,6 +13,8 @@ import typescriptLogo from "../../../assets/typescript.svg";
 
 export const HomePage = () => {
   const container = document.createElement("div");
+
+  container.classList.add("container");
 
   const logosWrapper = document.createElement("div");
   logosWrapper.appendChild(Logo(viteLogo, "Vite logo", "https://vite.dev"));
@@ -48,7 +51,8 @@ export const HomePage = () => {
 
   const incrementBtn = Button(
     "Clique para incrementar...",
-    handleUpdateCounter
+    handleUpdateCounter,
+    "cta-button"
   );
   card.appendChild(incrementBtn);
 

@@ -1,4 +1,4 @@
-button {
+.cta-button {
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -6,13 +6,16 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
+  color: #fff;
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
+
+.cta-button:hover {
   border-color: #646cff;
 }
-button:focus,
-button:focus-visible {
+
+.cta-button:focus,
+.cta-button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }

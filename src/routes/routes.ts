@@ -1,5 +1,5 @@
 // Pages
-import { HomePage } from "../components/pages/home-page/home.page";
+import { HomePage } from "../components/pages/home-page";
 import { AboutPage } from "../components/pages/about-page";
 
 const routes: Record<string, () => HTMLElement> = {
@@ -9,7 +9,6 @@ const routes: Record<string, () => HTMLElement> = {
 
 export const router = () => {
   const app = document.querySelector("#app")!;
-  app.innerHTML = "";
 
   const path = window.location.pathname;
 
