@@ -10,7 +10,7 @@ import "../../element/button/button.styles.css";
 import viteLogo from "/vite.svg";
 import typescriptLogo from "../../../assets/typescript.svg";
 
-export const HomePage = () => {
+export const AboutPage = () => {
   const container = document.createElement("div");
 
   const logosWrapper = document.createElement("div");
@@ -26,7 +26,7 @@ export const HomePage = () => {
   container.appendChild(logosWrapper);
 
   const title = document.createElement("h1");
-  title.textContent = "| Home - Vite + TypeScript";
+  title.textContent = "| Sobre - Vite + TypeScript";
   container.appendChild(title);
 
   const card = document.createElement("div");

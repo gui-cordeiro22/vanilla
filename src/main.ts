@@ -1,10 +1,9 @@
+// Routes
+import { router } from "./routes/routes";
+
 // Styles
 import "./styles/global-style.css";
 
-// Assets
-import { HomePage } from "./components/pages/home-page/home.page";
+router();
 
-const app = document.querySelector<HTMLDivElement>("#app")!;
-
-app.innerHTML = "";
-app.appendChild(HomePage());
+window.addEventListener("popstate", router);
